@@ -1,7 +1,6 @@
 @import "./variables.scss";
 
 .merit-container {
-    z-index: 100;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     background-color: $background-color;
@@ -10,27 +9,20 @@
     border-width: $default-border-width;
     border-color: $default-border-color;
     box-shadow: $default-shadow;
-    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940); 
-    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation-fill-mode: both;
     .merit-info {
         display: flex;
         justify-content: left;
         width: 100%;
         .logo-container {
-            img{
-                margin-top: 2rem;
-                margin-left: 2rem;
-                margin-right: 2rem;
-                width: 100px;
-                height: 100px;
-                /*
-                border-style: solid;
-                border-color: $default-border-color;
-                border-radius: 50%;
-                border-width: $default-border-width;
-                box-shadow: $default-shadow;
-                */
+            height: auto;
+            max-width: 20%;
+            min-width: 4rem;
+            padding: 1rem;
+            img {
+                width: 70%;
             }
         }
         .spacer {
@@ -38,8 +30,16 @@
             display: inline-flex;
             justify-content: space-between;
             .company-title {
+                margin-top: auto;
+                margin-bottom: auto;
                 h3 {
                     color: $default-heading-color;
+                    font-weight: 400;
+                    font-size: 1rem;
+                }
+                h2 {
+                    margin: 0;
+                    font-weight: 600;
                 }
             }
             .period {
@@ -48,7 +48,7 @@
                 text-align: right;
                 span {
                     width: 100%;
-                    white-space:nowrap;
+                    white-space: nowrap;
                 }
             }
         }
@@ -67,7 +67,6 @@
             transform: translateX(0);
             opacity: 1;
         }
-
     }
     @keyframes slide-left {
         0% {
@@ -81,6 +80,5 @@
             transform: translateX(0);
             opacity: 1;
         }
-
     }
 }

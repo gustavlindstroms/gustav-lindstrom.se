@@ -12,7 +12,7 @@
 			<img src="logos/{merit.image}"/>
 		</div>
 		<div class="spacer">
-			<div class="company-tile">
+			<div class="company-title">
 				<h3>{merit.companyName}</h3>
 				<h2>{merit.title}</h2>
 			</div>

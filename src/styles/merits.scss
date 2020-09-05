@@ -1,12 +1,14 @@
 @import "./variables.scss";
 
 .merits {
-    padding-top: 4rem;
+    padding-top: 2rem;
     .about {
         margin-top: 4rem;
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
+        width: 25%;
+        float: left;
         .about-image-container {
             width: 100%;
             display: flex;
@@ -21,20 +23,39 @@
                 box-shadow: $default-shadow;
             }
         }
-        h2 {
-            width: 100%;
-            text-align: center;
-            margin: 1rem;
-            font-weight: 400;
-            font-size: 2rem;
+        .about-text {
+            h2 {
+                text-align: center;
+                margin: 1rem;
+                font-weight: 400;
+                font-size: 2rem;
+            }
+            p {
+                margin-left: 2rem;
+                line-height: 150%;
+                width: 80%;
+                text-align: left;
+            }
         }
-        p {
-            line-height: 150%;
-            width: 80%;
-            text-align: left;
+        .about-list {
+            padding: 0;
+            margin: 0;
+            h2{
+                margin: 1rem;
+                margin-left: 3rem;
+                text-align: left;
+            }
+            ul{
+                color: $default-heading-color;
+                padding: 0;
+                margin-left: 3rem;
+                li {
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                    width: 80%
+                }
+            }
         }
-        width: 25%;
-        float: left;
     }
     .merits-list {
         width: 50%;
@@ -61,7 +82,7 @@
         }
 
         .merits-container {
-            max-height: 81vh;
+            max-height: 75vh;
             overflow-x: scroll;
             -ms-overflow-style: none; /* IE and Edge */
             scrollbar-width: none; /* Firefox */
