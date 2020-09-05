@@ -1,0 +1,28 @@
+@import 'variables.scss';
+
+header {
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+    nav {
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-style: solid;
+        border-width: 0.25px;
+        border-color: $default-border-color;
+        box-shadow: $default-shadow;
+        height: 4rem;
+        background-color: $background-color;
+        a {
+            font-weight: 600;
+            color: $default-heading-color;
+            text-decoration: none;
+            align-self: center;
+            font-size: 1.25rem;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import 'variables.scss';
+@import 'header.scss';
+
+:global(h1) {
+    font-size: 2.2rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    color:$default-heading-color;
+}
+
+:global(h2) {
+    font-size: 1.25rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    color:$default-heading-color;
+}
+
+:global(h3) {
+    color:$default-heading-color;
+}
+
+:global(body) {
+    background: $background-color;
+    height: 100vh;
+    width: 100vw;
+}
