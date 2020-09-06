@@ -5,6 +5,15 @@ const merits: Array<any> =
 [
     {
         type: "job",
+        companyName: "School of Economics and Management",
+        title: "Lab Assistant",
+        startDate: "aug 2020",
+        endDate: null,
+        description: "My task as an Lab Assistant is to support junior student with their lab-assignments. Teaching general design patterns and concepts in languages such as Java, SQL and C#.",
+        image: "lu.png"
+    },
+    {
+        type: "job",
         companyName: "XLENT Consultning Group",
         title: "Consultant",
         startDate: "june 2020",
@@ -119,61 +128,85 @@ const vol = merits.filter(x => x.type == "vol");
 
 const tools = [
     {
-        name: "PhotoShop",
-        icon: "photoshop.png"
-    },
-    {
-        name: "Adobe XD",
-        icon: "xd.png"
-    },
-    {
-        name: "Power BI",
-        icon: "powebi.png"
-    },
-    {
-        name: "Visual Paradigm",
-        icon: "vp.png"
-    },
-    {
-        name: "SQL",
-        icon: "sql.png"
-    },
-    {
-        name: "Mongo DB noSQL",
-        icon: "mongo.png"
-    },
+        name: ".NET C#",
+        icon: "csharp.png"
+    },    
     {
         name: "Vue",
         icon: "vue.png"
     },
     {
-        name: "TypeScript",
-        icon: "ts.png"
+        name: "Power BI",
+        icon: "powerbi.png"
     },
     {
-        name: "Svelte",
+        name: "Windows Server",
+        icon: "windowsserver.png"
+    },
+    {
+        name: "SCRUM",
+        icon: "scrum.png"
+    },
+    {
+        name: "Azure",
+        icon: "azure.png"
+    },    
+    {
+        name: "TypeScript",
+        icon: "typescript.png"
+    },    
+    {
+        name: "Svelte js",
         icon: "svelte.png"
     },
     {
-        name: ".NET",
-        icon: "net.png"
+        name: "Sass",
+        icon: "sass.png"
     },
     {
         name: "Java",
         icon: "java.png"
     },
     {
-        name: "Go (golang)",
-        icon: "go.png"
+        name: "git",
+        icon: "git.png"
     },
     {
-        name: "Python",
+        name: "Atlassian Suite",
+        icon: "atlassian.png"
+    },    
+    {
+        name: "Visual Paradigm",
+        icon: "vp.png"
+    },
+    {
+        name: "python",
         icon: "python.png"
     },
     {
-        name: "JavaScript",
-        icon: "js.png"
+        name: "django",
+        icon: "django.png"
     },
+    {
+        name: "Microsoft SQL Server",
+        icon: "mss.png"
+    },
+    {
+        name: "Amazon Web Services",
+        icon: "aws.png"
+    },    
+    {
+        name: "R",
+        icon: "r.png"
+    },
+    {
+        name: "bash",
+        icon: "bash.png"
+    },
+    {
+        name: "ruby",
+        icon: "rails.png"
+    }
 ]
 
 const about = "22-year-old, full time Bachelor Student within Informatics at Lund University. Previous experience in project management, leadership and economics. Good learning ability and strong motivation that spreads to others in the team. Hard working and effective with a huge interest for tech in all shapes and sizes. -Outgoing and likes everyone!"

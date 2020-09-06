@@ -1,12 +1,13 @@
-@import 'variables.scss';
-@import 'header.scss';
+@import "variables.scss";
+@import "header.scss";
+@import "portfolio.scss";
 
 :global(h1) {
     font-size: 2.2rem;
     padding: 0;
     margin: 0;
     font-weight: 600;
-    color:$default-heading-color;
+    color: $default-heading-color;
 }
 
 :global(h2) {
@@ -14,11 +15,11 @@
     padding: 0;
     margin: 0;
     font-weight: 600;
-    color:$default-heading-color;
+    color: $default-heading-color;
 }
 
 :global(h3) {
-    color:$default-heading-color;
+    color: $default-heading-color;
     margin: 0;
 }
 
@@ -37,3 +38,5 @@
     font-weight: 600 !important;
     text-decoration: underline !important;
 }
+
+

@@ -1,23 +1,32 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 header {
     position: fixed;
     text-align: center;
     width: 100vw;
+    z-index: 1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-style: solid;
+    border-width: 0.25px;
+    border-color: $default-border-color;
+    box-shadow: $default-shadow;
+    height: 4rem;
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
     nav {
+        justify-self: center;
+        height: 4rem;
+        max-width: 800px;
+        min-width: 350px;
         text-align: center;
         display: flex;
         justify-content: space-evenly;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        border-style: solid;
-        border-width: 0.25px;
-        border-color: $default-border-color;
-        box-shadow: $default-shadow;
-        height: 4rem;
-        background-color: $background-color;
+
         a {
+            width: 33%;
             font-weight: 400;
             color: $default-heading-color;
             text-decoration: none;
@@ -25,7 +34,4 @@ header {
             font-size: 1.25rem;
         }
     }
-
-    
 }
-

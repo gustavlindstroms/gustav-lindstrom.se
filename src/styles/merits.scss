@@ -1,9 +1,11 @@
 @import "./variables.scss";
 
 .merits {
-    padding-top: 2rem;
+    padding-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
     .about {
-        margin-top: 4rem;
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
@@ -31,28 +33,29 @@
                 font-size: 2rem;
             }
             p {
-                margin-left: 2rem;
+                margin: 1rem;
                 line-height: 150%;
-                width: 80%;
                 text-align: left;
             }
         }
         .about-list {
-            padding: 0;
-            margin: 0;
-            h2{
-                margin: 1rem;
-                margin-left: 3rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            h2 {
                 text-align: left;
             }
-            ul{
+            ul {
+                display: block;
+                width: 100%;
+                list-style: none;
                 color: $default-heading-color;
                 padding: 0;
-                margin-left: 3rem;
+                margin: 1rem;
                 li {
+                    margin: 0;
                     margin-top: 0.5rem;
                     margin-bottom: 0.5rem;
-                    width: 80%
                 }
             }
         }
@@ -60,7 +63,6 @@
     .merits-list {
         width: 50%;
         float: left;
-        margin-top: 6rem;
         .category {
             label {
                 width: 10rem;
@@ -82,7 +84,7 @@
         }
 
         .merits-container {
-            max-height: 75vh;
+            max-height: 85vh;
             overflow-x: scroll;
             -ms-overflow-style: none; /* IE and Edge */
             scrollbar-width: none; /* Firefox */
@@ -95,5 +97,201 @@
             margin-bottom: 1rem;
             text-align: center;
         }
+    }
+    .tools {
+        justify-content: center;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        h2 {
+            margin: 1rem;
+            opacity: 0;
+            -moz-animation: fadein 2s; /* Firefox */
+            -webkit-animation: fadein 2s; /* Safari and Chrome */
+            animation-fill-mode: both;
+        }
+        .tools-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            align-content: center;
+            img {
+                border-radius: 50%;
+                border-style: solid;
+                border-color: $default-border-color;
+                border-width: $default-border-width;
+                box-shadow: $default-shadow;
+            }
+            .tooltip {
+                position: relative;
+                display: inline-block;
+                opacity: 0;
+                -moz-animation: fadein 2s; /* Firefox */
+                -webkit-animation: fadein 2s; /* Safari and Chrome */
+                animation-fill-mode: both;
+            }
+
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 120px;
+                background-color: $background-color;
+                color: $default-heading-color;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                position: absolute;
+                box-shadow: $default-shadow;
+                z-index: 1;
+                bottom: 150%;
+                left: 50%;
+                margin-left: -60px;
+            }
+
+            .tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: $background-color transparent transparent transparent;
+            }
+
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+            }
+        }
+    }
+}
+@media screen 
+  and (max-width: 450px){
+    .merits {
+        display: block;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        .about {
+            width: 100%;
+            .about-image-container {
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .about-text {
+                h2 {
+                    font-size: 1.25rem;
+                }
+            }
+
+        }
+        .merits-list {
+            width: 100%;
+    
+        }
+        .tools {
+            display: none;
+        }
+    }
+
+}
+
+/* ----------- 450 - 650px ----------- */
+@media screen 
+  and (min-width: 451px) 
+  and (max-width: 650px){
+    .merits {
+        display: block;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        .about {
+            width: 100%;
+            .about-image-container {
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .about-text {
+                h2 {
+                    font-size: 1.25rem;
+                }
+            }
+
+        }
+        .merits-list {
+            width: 100%;
+    
+        }
+        .tools {
+            display: none;
+        }
+    }
+      
+
+}
+
+/* ----------- 650px - 950px ----------- */
+@media screen 
+  and (min-width: 651px)
+  and (max-width: 950px){
+    .merits {
+        display: block;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        .about {
+            width: 100%;
+            .about-image-container {
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .about-text {
+                h2 {
+                    font-size: 1.25rem;
+                }
+            }
+
+        }
+        .merits-list {
+            width: 100%;
+    
+        }
+        .tools {
+            display: none;
+        }
+    }
+
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein {
+    /* Firefox */
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

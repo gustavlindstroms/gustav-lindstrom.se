@@ -16,10 +16,20 @@
 			<p>{about}</p>
 		</div>
 		<div class="about-list">
-			<h2>I also:</h2>
 			<ul>
-				<li>Have a drivers license</li>
-				<li>Used to be an elite swimmer at national level.</li>
+				<h2>I also:</h2>
+				<li>
+					<i class="far fa-circle" style="font-size: 0.9rem" />
+					Have a drivers license
+				</li>
+				<li>
+					<i class="far fa-circle" style="font-size: 0.9rem" />
+					Used to be an elite swimmer at national level.
+				</li>
+				<li>
+					<i class="far fa-circle" style="font-size: 0.9rem" />
+					Am very interested on cooking.
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -37,7 +47,7 @@
 			<label for="vol">volunteer</label>
 
 		</div>
-		<div class="merits-container">
+		<div class="merits-container" >
 			{#if group == 'job'}
 				{#each jobs as merit, i}
 					<Merit index={i} bind:merit />
@@ -51,6 +61,18 @@
 					<Merit index={h} bind:merit />
 				{/each}
 			{/if}
+		</div>
+
+	</div>
+	<div class="tools">
+		<h2>Relevant tools:</h2>
+		<div class="tools-container">
+			{#each tools as tool, i}
+				<div class="tooltip" style="animation-delay: {0.05 * i}s">
+					<img src="tools/{tool.icon}" />
+					<span class="tooltiptext">{tool.name}</span>
+				</div>
+			{/each}
 		</div>
 	</div>
 </div>

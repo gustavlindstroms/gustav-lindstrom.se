@@ -18,11 +18,14 @@
         width: 100%;
         .logo-container {
             height: auto;
-            max-width: 20%;
             min-width: 4rem;
+            margin-right: 1rem;
             padding: 1rem;
             img {
-                width: 70%;
+                border-radius: 50%;
+                box-shadow: $default-shadow;
+                min-width: 2rem;
+                max-width: 5rem;
             }
         }
         .spacer {
@@ -36,6 +39,7 @@
                     color: $default-heading-color;
                     font-weight: 400;
                     font-size: 1rem;
+                    margin-top: 0.5rem;
                 }
                 h2 {
                     margin: 0;
