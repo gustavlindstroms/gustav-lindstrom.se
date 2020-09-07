@@ -168,6 +168,10 @@ const tools = [
         icon: "java.png"
     },
     {
+        name: "Go",
+        icon: "go.png"
+    },
+    {
         name: "git",
         icon: "git.png"
     },
@@ -190,6 +194,10 @@ const tools = [
     {
         name: "Microsoft SQL Server",
         icon: "mss.png"
+    },
+    {
+        name: "Maria DB",
+        icon: "mariadb.png"
     },
     {
         name: "Amazon Web Services",
