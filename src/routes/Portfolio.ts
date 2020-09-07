@@ -6,7 +6,7 @@ const projects = [{
     image: "projects/sudoku.png",
     description: "My online resume and portfolio",
     linktype: "repo",
-    link: "https://github.com",
+    link: "https://github.com/gustavlindstroms/gustav-lindstrom.se",
     tools: [{
         name: "Svelte",
         icon: "svelte.png"
@@ -31,9 +31,9 @@ const projects = [{
     name: "sudoku web-app",
     estimatedTime: "60",
     image: "projects/sudoku.png",
-    description: "Singe page application for playing sudoku, including backend to generate and serve over 2 000 000 sudoku boards over REST API",
+    description: "Singe page application for playing sudoku, including backend to generate and serve over 2 000 000 sudoku boards over an REST API.",
     linktype: "repo",
-    link: "https://gitlab.com",
+    link: "https://github.com/gustavlindstroms/sudoku",
     tools: [
         {
             name: "C#",
@@ -71,90 +71,39 @@ const projects = [{
         },]
 },
 {
-    name: "sudoku web-app",
-    estimatedTime: "60",
-    image: "projects/sudoku.png",
-    description: "Singe page application for playing sudoku, including backend to generate and serve over 2 000 000 sudoku boards over REST API",
-    linktype: "site",
+    name: "Sentiment Analysis",
+    image: "projects/sentiment-analysis.png",
+    description: "Sentiment analysis over words appearing more than 125 times in Jane Austens book Pride and Prejudice.",
+    linktype: "repo",
     link: "https://google.com",
     tools: [
         {
-            name: "C#",
-            icon: "csharp.png",
+            name: "R",
+            icon: "r.png",
 
-        },
-        {
-            name: "Vue",
-            icon: "vue.png"
-        },
-        {
-            name: "TypeScript",
-            icon: "typescript.png",
-
-        },
-        {
-            name: "Sass",
-            icon: "sass.png",
-
-        },
-        {
-            name: "git",
-            icon: "git.png",
-
-        },
-        {
-            name: "SQL",
-            icon: "mss.png",
-
-        },
-        {
-            name: "Azure",
-            icon: "azure.png",
-
-        },]
+        }]
 },
 {
-    name: "sudoku web-app",
+    name: "Maze generator and solver",
     estimatedTime: "60",
-    image: "projects/sudoku.png",
-    description: "Singe page application for playing sudoku, including backend to generate and serve over 2 000 000 sudoku boards over REST API",
-    linktype: "site",
-    link: "http://google.com",
+    image: "projects/maze.png",
+    description: "Maze generating and solving with java & python using Prims algorithm. Needs more work...",
+    linktype: "repo",
+    link: "https://github.com/gustavlindstroms/mazeCraze",
     tools: [
         {
-            name: "C#",
-            icon: "csharp.png",
+            name: "Java",
+            icon: "java.png",
 
         },
         {
-            name: "Vue",
-            icon: "vue.png"
-        },
-        {
-            name: "TypeScript",
-            icon: "typescript.png",
-
-        },
-        {
-            name: "Sass",
-            icon: "sass.png",
-
+            name: "Python",
+            icon: "python.png"
         },
         {
             name: "git",
-            icon: "git.png",
-
-        },
-        {
-            name: "SQL",
-            icon: "mss.png",
-
-        },
-        {
-            name: "Azure",
-            icon: "azure.png",
-
-        },]
+            icon: "git.png"
+        }]
 }
 ]
 

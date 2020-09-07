@@ -19,12 +19,13 @@
 			</div>
 		</div>
 		<div class="back">
-			<h2>You're welcome to have a closer look!</h2>
 			{#if project.link && project.linktype === 'repo'}
+			<h2>You're welcome to have a closer look!</h2>
 				<a href={project.link}>
 					<i class="fab fa-github" />
 				</a>
 			{:else if project.link && project.linktype === 'site'}
+			<h2>You're welcome to have a closer look!</h2>
 				<a href={project.link}>
 					<i class="fas fa-link" />
 				</a>
