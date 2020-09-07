@@ -212,7 +212,7 @@ const tools = [
         icon: "bash.png"
     },
     {
-        name: "ruby",
+        name: "ruby on rails",
         icon: "rails.png"
     }
 ]
