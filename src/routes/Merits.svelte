@@ -9,7 +9,7 @@
 <div class="merits">
 	<div class="about">
 		<div class="about-image-container">
-			<img src="portrait/me.jpg" />
+			<img src="portrait/me.png" />
 		</div>
 		<div class="about-text">
 			<h2>About Me</h2>

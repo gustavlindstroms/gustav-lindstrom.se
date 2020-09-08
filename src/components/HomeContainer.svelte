@@ -1,6 +1,6 @@
 <div class="home-container">
     <div class="image-container">
-        <img src="portrait/me.jpg"/>
+        <img src="portrait/me.png"/>
     </div>
     <div class="name-container">
         <h1>Gustav Lindström</h1>
