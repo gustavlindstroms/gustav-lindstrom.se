@@ -8,7 +8,11 @@
     </div>
     <div class="link-container">
         <a href="#/experience">my experience</a>
-        <a href="#/portfolio">my portfolio</a>
+        <a href="#/projects">my projects</a>
+    </div>
+    <div class="links">
+    <a class="download" href="documents/test.pdf" download="Gustav_Lindström_Resume"><i class="fas fa-download"></i>download resume</a>
+    <a href="https://www.linkedin.com/in/gustav-lindstrom/" class="social-media-link"><i class="fab fa-linkedin"></i>connect with me</a>
     </div>
 </div>
 

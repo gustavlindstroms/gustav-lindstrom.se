@@ -6,10 +6,10 @@ const merits: Array<any> =
     {
         type: "job",
         companyName: "School of Economics and Management",
-        title: "Lab Assistant",
+        title: "Lab Supervisor",
         startDate: "aug 2020",
         endDate: null,
-        description: "My task as an Lab Assistant is to support junior student with their lab-assignments. Teaching general design patterns and concepts in languages such as Java, SQL and C#.",
+        description: "My task as an Lab Supervisor is to support junior student with their lab-assignments. Teaching general design patterns and concepts in languages such as Java, SQL and C#.",
         image: "lu.png"
     },
     {

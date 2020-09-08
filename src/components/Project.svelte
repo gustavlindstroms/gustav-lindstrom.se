@@ -17,6 +17,7 @@
 					<img src="tools/{tool.icon}" />
 				{/each}
 			</div>
+			<div class="ripple"></div>
 		</div>
 		<div class="back">
 			{#if project.link && project.linktype === 'repo'}
@@ -30,7 +31,6 @@
 					<i class="fas fa-link" />
 				</a>
 			{/if}
-
 		</div>
 	</div>
 </div>

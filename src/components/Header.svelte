@@ -1,9 +1,11 @@
 <header>
+    <a class="download" href="documents/test.pdf" download="Gustav_Lindström_Resume"><i class="fas fa-download"></i>download resume</a>
     <nav>
         <a href="#/experience" use:active>experience </a>
         <a href="#/" use:active> home </a>
-        <a href="#/portfolio" use:active> portfolio </a>
+        <a href="#/projects" use:active>projects</a>
     </nav>
+    <a href="https://www.linkedin.com/in/gustav-lindstrom/" class="social-media-link"><i class="fab fa-linkedin"></i></a>
 </header>
 
 <style lang="scss">

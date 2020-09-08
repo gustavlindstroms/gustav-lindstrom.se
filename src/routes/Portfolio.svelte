@@ -1,6 +1,6 @@
 <div class="portfolio">
     <h1>
-        Portfolio
+        Projects
     </h1>
     <div class="project-container">
         {#each projects as project}

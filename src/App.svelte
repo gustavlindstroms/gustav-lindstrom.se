@@ -17,7 +17,7 @@ import Router from 'svelte-spa-router';
 const routes = {
 '/': Home,
 '/experience': Merits,
-'/portfolio': Portfolio,
+'/projects': Portfolio,
 
 }
 </script>
