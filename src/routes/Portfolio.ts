@@ -3,7 +3,7 @@ import Project from '../components/Project.svelte';
 const projects = [{
     name: "Personal Website",
     estimatedTime: "20",
-    image: "projects/sudoku.png",
+    image: "projects/gustav-lindstrom.png",
     description: "My online resume and portfolio",
     linktype: "repo",
     link: "https://github.com/gustavlindstroms/gustav-lindstrom.se",
