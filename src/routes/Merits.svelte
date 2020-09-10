@@ -7,6 +7,12 @@
 </style>
 
 <div class="merits">
+	{#if showScroll}
+		<div class="scroll-down">
+			<div class="div1" />
+			<div class="div2" />
+	    </div>
+	{/if}
 	<div class="about">
 		<div class="about-image-container">
 			<img src="portrait/me.png" />
@@ -47,7 +53,10 @@
 			<label for="vol">volunteer</label>
 
 		</div>
-		<div class="merits-container" >
+		<div class="fade-down">
+		</div>
+		<div class="merits-container">
+
 			{#if group == 'job'}
 				{#each jobs as merit, i}
 					<Merit index={i} bind:merit />
@@ -61,8 +70,10 @@
 					<Merit index={h} bind:merit />
 				{/each}
 			{/if}
+			<div class="intersection-element" />
 		</div>
-
+		<div class="fade-up">
+		</div>
 	</div>
 	<div class="tools">
 		<h2>Relevant tools:</h2>

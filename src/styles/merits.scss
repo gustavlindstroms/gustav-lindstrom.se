@@ -5,16 +5,19 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1600px;
+
     .about {
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
         width: 25%;
         float: left;
+
         .about-image-container {
             width: 100%;
             display: flex;
             justify-content: center;
+
             img {
                 opacity: 0.9;
                 width: 150px;
@@ -33,19 +36,23 @@
                 font-weight: 400;
                 font-size: 2rem;
             }
+
             p {
                 margin: 1rem;
                 line-height: 150%;
                 text-align: left;
             }
         }
+
         .about-list {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+
             h2 {
                 text-align: left;
             }
+
             ul {
                 display: block;
                 width: 100%;
@@ -53,6 +60,7 @@
                 color: $default-heading-color;
                 padding: 0;
                 margin: 1rem;
+
                 li {
                     margin: 0;
                     margin-top: 0.5rem;
@@ -61,9 +69,30 @@
             }
         }
     }
+
     .merits-list {
         width: 50%;
         float: left;
+
+        .fade-down {
+            margin-bottom: -3rem;
+            position: relative;
+            z-index: 100;
+            width: 100%;
+            height: 3rem;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 23%, rgba(255, 255, 255, 0) 80%);
+        }
+        .fade-up {
+            margin-top: -3rem;
+            position: relative;
+            z-index: 100;
+            width: 100%;
+            height: 3rem;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 23%, rgba(255, 255, 255, 1) 80%);
+        }
+
         .category {
             label {
                 width: 10rem;
@@ -74,31 +103,41 @@
                 cursor: pointer;
                 text-align: center;
             }
+
             display: flex;
             justify-content: center;
+
             input {
                 visibility: hidden;
             }
+
             input[type="radio"]:checked + label {
                 font-weight: 600;
+                text-decoration: underline;
             }
         }
 
         .merits-container {
-            max-height: 85vh;
+            max-height: 82vh;
             overflow-x: scroll;
             -ms-overflow-style: none; /* IE and Edge */
             scrollbar-width: none; /* Firefox */
+
+            .intersection-element {
+                height: 1px;
+            }
         }
 
         .merits-container::-webkit-scrollbar {
             display: none;
         }
+
         h1 {
             margin-bottom: 1rem;
             text-align: center;
         }
     }
+
     .tools {
         justify-content: center;
         width: 25%;
@@ -106,6 +145,7 @@
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
+
         h2 {
             margin: 1rem;
             opacity: 0;
@@ -113,6 +153,7 @@
             -webkit-animation: fadein 2s; /* Safari and Chrome */
             animation-fill-mode: both;
         }
+
         .tools-container {
             display: flex;
             flex-wrap: wrap;
@@ -121,17 +162,27 @@
             margin-right: 1rem;
             margin-left: 1rem;
             align-content: center;
+
             img {
                 border-radius: 50%;
                 border-style: solid;
                 border-color: $default-border-color;
                 border-width: $default-border-width;
                 box-shadow: $default-shadow;
+                margin: 0.25rem;
+                -webkit-filter: grayscale(80%);
+                filter: grayscale(80%);
             }
+            img:hover {
+                filter: none;
+            }
+
+
             .tooltip {
                 position: relative;
                 display: inline-block;
                 opacity: 0;
+                animation: fadein 2s;
                 -moz-animation: fadein 2s; /* Firefox */
                 -webkit-animation: fadein 2s; /* Safari and Chrome */
                 animation-fill-mode: both;
@@ -169,130 +220,182 @@
             }
         }
     }
+
+    .scroll-down {
+        position: fixed;
+        z-index: 200;
+        bottom: 20px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        margin-left: -40px;
+        display: flex;
+        -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+	    animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+        div {
+            width: 40px;
+            height: 3px;
+            background-color: $default-heading-color;
+        }
+        .div1 {
+            margin-right: -0.15rem;
+            -webkit-transform: rotate(25deg);
+            -ms-transform: rotate(25deg);
+            transform: rotate(25deg);
+
+        }
+        .div2 {
+            margin-left: -0.15rem;
+            -webkit-transform: rotate(-25deg);
+            -ms-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+        }
+    }
 }
-@media screen 
-  and (max-width: 450px){
+@media screen and (max-width: 450px) {
     .merits {
         display: block;
         margin-right: 1rem;
         margin-left: 1rem;
+
         .about {
             width: 100%;
+
             .about-image-container {
                 img {
                     width: 150px;
                     height: 150px;
                 }
             }
+
             .about-text {
                 h2 {
                     font-size: 1.25rem;
                 }
             }
-
         }
+
         .merits-list {
             width: 100%;
-    
         }
+
         .tools {
             display: none;
         }
     }
-
 }
 
 /* ----------- 450 - 650px ----------- */
-@media screen 
-  and (min-width: 451px) 
-  and (max-width: 650px){
+@media screen and (min-width: 451px) and (max-width: 650px) {
     .merits {
         display: block;
         margin-right: 1rem;
         margin-left: 1rem;
+
         .about {
             width: 100%;
+
             .about-image-container {
                 img {
                     width: 160px;
                     height: 160px;
                 }
             }
+
             .about-text {
                 h2 {
                     font-size: 1.25rem;
                 }
             }
-
         }
+
         .merits-list {
             width: 100%;
-    
         }
+
         .tools {
             display: none;
         }
     }
-      
-
 }
 
 /* ----------- 650px - 950px ----------- */
-@media screen 
-  and (min-width: 651px)
-  and (max-width: 950px){
+@media screen and (min-width: 651px) and (max-width: 950px) {
     .merits {
         display: block;
         margin-right: 1rem;
         margin-left: 1rem;
+
         .about {
             width: 100%;
+
             .about-image-container {
                 img {
                     width: 175px;
                     height: 175px;
                 }
             }
+
             .about-text {
                 h2 {
                     font-size: 1.25rem;
                 }
             }
-
         }
+
         .merits-list {
             width: 100%;
-    
         }
+
         .tools {
             display: none;
         }
     }
-
 }
 @keyframes fadein {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
 @-moz-keyframes fadein {
-    /* Firefox */
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
 @-webkit-keyframes fadein {
-    /* Safari and Chrome */
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
+
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+  }

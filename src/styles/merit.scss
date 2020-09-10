@@ -12,15 +12,18 @@
     -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation-fill-mode: both;
+
     .merit-info {
         display: flex;
         justify-content: left;
         width: 100%;
+
         .logo-container {
             height: auto;
             min-width: 4rem;
             margin-right: 1rem;
             padding: 1rem;
+
             img {
                 border-radius: 50%;
                 box-shadow: $default-shadow;
@@ -28,24 +31,29 @@
                 max-width: 5rem;
             }
         }
+
         .spacer {
             width: 100%;
             display: inline-flex;
             justify-content: space-between;
+
             .company-title {
                 margin-top: auto;
                 margin-bottom: auto;
+
                 h3 {
                     color: $default-heading-color;
                     font-weight: 400;
                     font-size: 1rem;
                     margin-top: 0.5rem;
                 }
+
                 h2 {
                     margin: 0;
                     font-weight: 600;
                 }
             }
+
             .period {
                 justify-content: right;
                 margin: 1rem;
@@ -57,28 +65,35 @@
             }
         }
     }
+
     .description {
         margin: 1rem;
     }
+
     @-webkit-keyframes slide-left {
+
         0% {
             -webkit-transform: translateX(100%);
             transform: translateX(100%);
             opacity: 0;
         }
+
         100% {
             -webkit-transform: translateX(0);
             transform: translateX(0);
             opacity: 1;
         }
     }
+
     @keyframes slide-left {
+
         0% {
             -webkit-transform: translateX(100%);
             transform: translateX(100%);
             display: inline-block;
             opacity: 0;
         }
+
         100% {
             -webkit-transform: translateX(0);
             transform: translateX(0);

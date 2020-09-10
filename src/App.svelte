@@ -18,6 +18,5 @@ const routes = {
 '/': Home,
 '/experience': Merits,
 '/projects': Portfolio,
-
 }
 </script>
