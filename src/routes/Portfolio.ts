@@ -1,7 +1,7 @@
 import Project from '../components/Project.svelte';
 
 const projects = [{
-    name: "Personal Website",
+    name: "personal website",
     estimatedTime: "20",
     image: "projects/gustav-lindstrom.png",
     description: "My online resume and portfolio",
@@ -28,7 +28,7 @@ const projects = [{
     }]
 },
 {
-    name: "sudoku web-app",
+    name: "sudoku",
     estimatedTime: "60",
     image: "projects/sudoku.png",
     description: "Singe page application for playing sudoku, including backend to generate and serve over 2 000 000 sudoku boards over an REST API.",
@@ -71,7 +71,7 @@ const projects = [{
         },]
 },
 {
-    name: "Sentiment Analysis",
+    name: "sentiment analysis",
     image: "projects/sentiment-analysis.png",
     description: "Sentiment analysis over words appearing more than 125 times in Jane Austens book Pride and Prejudice.",
     linktype: "repo",
@@ -84,7 +84,7 @@ const projects = [{
         }]
 },
 {
-    name: "Maze generator and solver",
+    name: "maze generator and solver",
     estimatedTime: "60",
     image: "projects/maze.png",
     description: "Maze generating and solving with java & python using Prims algorithm. Needs more work...",

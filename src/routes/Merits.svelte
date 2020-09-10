@@ -18,7 +18,7 @@
 			<img src="portrait/me.png" />
 		</div>
 		<div class="about-text">
-			<h2>About Me</h2>
+			<h2>about me</h2>
 			<p>{about}</p>
 		</div>
 		<div class="about-list">
@@ -76,7 +76,7 @@
 		</div>
 	</div>
 	<div class="tools">
-		<h2>Relevant tools:</h2>
+		<h2>relevant tools:</h2>
 		<div class="tools-container">
 			{#each tools as tool, i}
 				<div class="tooltip" style="animation-delay: {0.05 * i}s">
