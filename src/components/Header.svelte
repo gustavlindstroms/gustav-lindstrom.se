@@ -1,5 +1,5 @@
 <header>
-    <a class="download" href="documents/test.pdf" download="Gustav_Lindström_Resume"><i class="fas fa-download"></i>download resume</a>
+    <a class="download" href="documents/gustav-lindstrom-resume.pdf" download="Gustav_Lindström_Resume"><i class="fas fa-download"></i>download resume</a>
     <nav>
         <a href="#/experience" use:active>experience </a>
         <a href="#/" use:active> home </a>

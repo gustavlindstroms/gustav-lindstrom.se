@@ -3,7 +3,8 @@
 header {
     position: fixed;
     text-align: center;
-    width: 100vw;
+    max-width: 100vw;
+    min-width: 100vw;
     z-index: 1;
     border-top: none;
     border-right: none;

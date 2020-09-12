@@ -9,8 +9,17 @@ const merits: Array<any> =
             title: "Lab Supervisor",
             startDate: "aug 2020",
             endDate: null,
-            description: "My task as an Lab Supervisor is to support junior student with their lab-assignments. Teaching general design patterns and concepts in languages such as Java, SQL and C#.",
+            description: "Tutoring junior students in their computer science assignments. Work involves explaining various concepts and design patterns in technologies such as Java, Relational Databases, and C#. Job has improved my ability to make technical concepts comprehensible.",
             image: "lu.png"
+        },
+        {
+            type: "job",
+            companyName: "Spago Nanomedical",
+            title: "Server Administrator",
+            startDate: "dec 2018",
+            endDate: null,
+            description: "Responsible to secure uptime and continuously improve the IT-security within the company’s server and client environment. The job has given me a good interpretation of server environments (Windows Server 2016) and network technology. My tasks have recently also started to include accounting of the employer’s expenses.",
+            image: "spago.png"
         },
         {
             type: "job",
@@ -18,16 +27,16 @@ const merits: Array<any> =
             title: "Consultant",
             startDate: "june 2020",
             endDate: "aug 2020",
-            description: "Internship involved full stack development with .NET API and Integration development. A thorough Progressive Web Application built with tools such as Vue.js Typescript, Sass. Worked with the git CLI, CI/CD operations, SCRUM and code reviews (Atlassian suite). The job gave me a deeper understanding of the stack and gave me tons of relevant experience of the software development process.",
+            description: "Planned and developed a “proof of concept” application for the real estate industry. Worked in a SCRUM team with code reviews and version control. Gained a lot of experience in the software development process, requirement specification, and cooperating with product owners and managers. Development spanned across the entire stack.",
             image: "xlent.png"
         },
         {
             type: "job",
-            companyName: "Self Employed",
+            companyName: "Tetra Pak",
             title: "Busniess Intelligence Consultant",
-            startDate: "okt 2019",
+            startDate: "june 2019",
             endDate: "may 2020",
-            description: "Job was to continue development and maintain Business Intelligence system at Tetra Pak. Job included development of interactive reports and operational responsibility how the department will continue to work with data. Job has also improved English communication skills.",
+            description: "Led the development of a new Business Intelligence platform. The project's goal was to improve how the department worked with data to improve daily workflow and decision support. Worked closely with the product owner and played a key role in the launch and promotion of the platform to support and educate the users. Job also improved my English in a business context. The job started as a summer job and later as a self-employed consultant.",
             image: "tetra-pak.png"
         },
         {
@@ -41,29 +50,11 @@ const merits: Array<any> =
         },
         {
             type: "job",
-            companyName: "Tetra Pak Packaging Solution",
-            title: "Summer Worker",
-            startDate: "june 2019",
-            endDate: "aug 2019",
-            description: "Led development project for a new Business Intelligence platform for my department. Worked in an agile team to develop the system. The job taught me agile methodology and tools such as Qlik, Microsoft Power BI and SAP.",
-            image: "tetra-pak.png"
-        },
-        {
-            type: "job",
-            companyName: "Academic Work",
-            title: "Server Administrator",
-            startDate: "dec 2018",
-            endDate: "aug 2020",
-            description: "Responsible to secure uptime and continuously improve the IT-security within the company’s server and client environment. The job has given me a good interpretation of server environments (Windows Server 2016) and network technology. My tasks have recently also started to include accounting of the employer’s expenses.",
-            image: "academic-work.png"
-        },
-        {
-            type: "job",
             companyName: "Moderaterna",
             title: "Ombudsman",
             startDate: "may 2018",
             endDate: "sep 2020",
-            description: "Responsible to secure uptime and continuously improve the IT-security within the company’s client and server environment. The job has given me a good interpretation of server environments (Windows Server 2016) and network technology. My tasks have recently also started to include accounting of the employer’s expenses.",
+            description: "The job was to manage the political campaign for the Moderate Youth Party in Skåne County for the election in 2018. Involved planning and executing multiple conferences for more than 100 people as well as developing strategy, digital content production, and promoting the campaign verbally.",
             image: "moderaterna.png"
         },
         {
@@ -72,7 +63,7 @@ const merits: Array<any> =
             title: "Junior Accountant",
             startDate: "aug 2017",
             endDate: "dec 2017",
-            description: "Responsible to secure uptime and continuously improve the IT-security within the company’s client and server environment. The job has given me a good interpretation of server environments (Windows Server 2016) and network technology. My tasks have recently also started to include accounting of the employer’s expenses.",
+            description: "Responsible for accounting customers' expenses and incomes as well as doing taxes. Also responsible for a digital transformation of company documents. Gave me a solid understanding of business, Swedish tax law, and working with clients.",
             image: "ludwig-co.png"
         },
         {
@@ -81,7 +72,7 @@ const merits: Array<any> =
             title: "Rhetoric and communication",
             startDate: "jan 2018",
             endDate: "june 2018",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            description: "Learned the theory of great pubic speaking, speech-writing, and how to perform public speaking professionally. Always liked public speaking and this was a way for me to sharpen my communication skills.",
             image: "gu.png"
         },
         {
@@ -131,9 +122,9 @@ onMount(() => {
     const options = {};
     const observer = new IntersectionObserver(function (entries, observer) {
         entries.forEach(entry => {
-            if(entry.isIntersecting) {
+            if (entry.isIntersecting) {
                 showScroll = false;
-            }else {
+            } else {
                 showScroll = true;
             }
         })
