@@ -9,7 +9,7 @@ const merits: Array<any> =
             title: "Lab Supervisor",
             startDate: "aug 2020",
             endDate: null,
-            description: "Tutoring junior students in their computer science assignments. Work involves explaining various concepts and design patterns in technologies such as Java, Relational Databases, and C#. Job has improved my ability to make technical concepts comprehensible.",
+            description:"Tutoring junior students in their computer science assignments. Work involves explaining various concepts and design patterns in technologies such as Java, Relational Databases, and C#. Job has improved my ability to make technical concepts comprehensible.",
             image: "lu.png"
         },
         {
@@ -18,7 +18,7 @@ const merits: Array<any> =
             title: "Server Administrator",
             startDate: "dec 2018",
             endDate: null,
-            description: "Responsible to secure uptime and continuously improve the IT-security within the company’s server and client environment. The job has given me a good interpretation of server environments (Windows Server 2016) and network technology. My tasks have recently also started to include accounting of the employer’s expenses.",
+            description: "Responsible to secure uptime and continuously improve the IT-security within the company’s server and client environment. The job has given me a good interpretation of server environments (Windows Server 2016), sequrity and networking (TCP/IP). Recently also leading a server project for scientific computations using python with CI/CD.",
             image: "spago.png"
         },
         {
@@ -65,6 +65,15 @@ const merits: Array<any> =
             endDate: "dec 2017",
             description: "Responsible for accounting customers' expenses and incomes as well as doing taxes. Also responsible for a digital transformation of company documents. Gave me a solid understanding of business, Swedish tax law, and working with clients.",
             image: "ludwig-co.png"
+        },
+        {
+            type: "edu",
+            companyName: "Uppsala Universitet",
+            title: "Computer Architecture",
+            startDate: "aug 2020",
+            endDate: null,
+            description: "Learning about the architecture of CPUs and design of computers using MIPS instruction set, Assembly and Logic simulation.",
+            image: "uu.png"
         },
         {
             type: "edu",
@@ -117,6 +126,7 @@ const jobs = merits.filter(x => x.type == "job");
 const edu = merits.filter(x => x.type == "edu");
 const vol = merits.filter(x => x.type == "vol");
 export let showScroll = true;
+
 onMount(() => {
     const element = document.querySelector(".intersection-element");
     const options = {};
@@ -225,6 +235,6 @@ const tools = [
     }
 ]
 
-const about = "22-year-old, full time Bachelor Student within Informatics at Lund University. Previous experience in project management, leadership and economics. Good learning ability and strong motivation that spreads to others in the team. Hard working and effective with a huge interest for tech in all shapes and sizes. -Outgoing and likes everyone!"
+const about = "22-year-old Informatics Student at Lund University with a true passion for tech and business. Previous experience in Project Management, Development, Data Analysis, and Business- now looking to excel in my career! People describe me as a hard-working, fast learning, people person. I like to keep myself busy and have, during my academic career, worked several part-time jobs, and explored numerous personal projects."
 export let group = "job";
 export let About = "";

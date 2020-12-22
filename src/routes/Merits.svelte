@@ -26,7 +26,7 @@
 				<h2>I also:</h2>
 				<li>
 					<i class="far fa-circle" style="font-size: 0.9rem" />
-					Have a drivers license
+					Have a drivers license.
 				</li>
 				<li>
 					<i class="far fa-circle" style="font-size: 0.9rem" />
@@ -34,7 +34,7 @@
 				</li>
 				<li>
 					<i class="far fa-circle" style="font-size: 0.9rem" />
-					Am very interested on cooking.
+					Love hiking, fishing and being outdoors!
 				</li>
 			</ul>
 		</div>
